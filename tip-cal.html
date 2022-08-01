@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tip-cal.css">
+</head>
+<body>
+    <div id="container">
+        <h1>TIP CALCULATOR</h1>
+
+        <div id="calculator">
+            <form action="">
+                <label for="">how much was your bill  <br>
+                    $<input type="number" id="bill amt">
+                </label>
+                <label for="qal">how satisfied are you with the services rendered <br>
+                    <select name="" id="qal">
+                        <option disabled ="" selected value="0"> select satisfaction level</option>
+                        <option value="0.5"> 50%-outstanding</option>
+                        <option value="0.4"> 40%-very good</option>
+                        <option value="0.25"> 25%-good</option>
+                        <option value="0.1"> 10%-bad</option>
+                        <option value="0.05"> 5%-shit</option>
+                    </select>
+                </label>
+                <label for=""> how many people split the bill <br>
+                        <input type="text" id="total people"> people
+                </label> <br>   
+                <button type="button" id="calculate"> calculate </button>
+            </form>
+        </div>
+        <div id="totaltip">
+        <sup>$</sup><span id="tip">0.00</span>
+        <small id="each">each</small>   
+        </div>
+    </div>
+    <script src="tip-cal.js"></script>
+   <!----- <script src="tip cal 2"></script>--->
+</html>
